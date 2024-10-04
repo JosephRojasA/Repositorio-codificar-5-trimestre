@@ -19,6 +19,9 @@ public class ClsEjemplo2 {
             String nombre =JOptionPane.showInputDialog(null,"ingrese el nombre del estudiante");
             Float nota1 = Float.parseFloat(JOptionPane.showInputDialog(null,"ingrese la nota del estudiante"));
             Float nota2 = Float.parseFloat(JOptionPane.showInputDialog(null,"ingrese la nota 2 del estudiante"));
+            Float notaFinal = (nota1 + nota2) / 2;
+            JOptionPane.showMessageDialog(null,"informacion del estudiante\n nombre:" 
+            +nombre+"\nNota final: " +notaFinal);
         }
     }
 }
