@@ -22,6 +22,23 @@ public class ClsEjemplo2 {
             Float notaFinal = (nota1 + nota2) / 2;
             JOptionPane.showMessageDialog(null,"informacion del estudiante\n nombre:" 
             +nombre+"\nNota final: " +notaFinal);
-        }
+        
+       if(notaFinal >= 3){
+            
+            JOptionPane.showMessageDialog(null, "El estudiante aprueba el cuerso");
+        } else{
+            JOptionPane.showMessageDialog(null, "El estudiante reaprueba el cuerso");
+        } }
+        /*
+        \n salto de linea
+        simpre preferible colocar null
+        JOptionPane ingresar datos
+        
+        (nota1 + nota2) / 2; entre parentesis
+        
+            
+        */
+        
+        
     }
 }
