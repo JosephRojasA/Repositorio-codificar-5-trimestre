@@ -25,9 +25,9 @@ public class ClsEjemplo2 {
         
        if(notaFinal >= 3){
             
-            JOptionPane.showMessageDialog(null, "El estudiante aprueba el cuerso");
+            JOptionPane.showMessageDialog(null, "El estudiante aprueba el curso");
         } else{
-            JOptionPane.showMessageDialog(null, "El estudiante reaprueba el cuerso");
+            JOptionPane.showMessageDialog(null, "El estudiante reaprueba el curso");
         } }
         /*
         \n salto de linea
