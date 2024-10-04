@@ -1,8 +1,7 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package clases;
+ */package clases;
 
 /**
  *
@@ -11,7 +10,7 @@ package clases;
 public class Estudiante {
     private String nombre;
     private float notaParcial1, notaParcial2, notaFinal;
-    
+
     public Estudiante(String nombre) {
         this.nombre = nombre;
     }
@@ -20,6 +19,7 @@ public class Estudiante {
         this.nombre = nombre;
         this.notaParcial1 = np1;
         this.notaParcial2 = np2;
+        calcularNotaFinal(); // Calcular la nota final al crear el estudiante
     }
 
     public String getNombre() {
@@ -39,23 +39,23 @@ public class Estudiante {
     }
     
     public void calcularNotaFinal() {
-        notaFinal = (notaParcial1 + notaParcial2 )/2;
+        notaFinal = (notaParcial1 + notaParcial2) / 2;
     }
-    
-    public String obtenerMensaje(){
-        if (notaFinal > 3){
-            return "el estudiante: " +nombre+ " Aprobo";
+
+    public String obtenerMensaje() {
+        if (notaFinal >= 3) {
+            return "el estudiante: " + nombre + " aprobó";
         } else {
-            return "el estudiante: " +nombre+ " Reprobo";
-            
+            return "el estudiante: " + nombre + " reprobó";
         }
     }
 
     public void setNotaParcial1(float f) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.notaParcial1 = f; // Almacenar el valor
     }
 
     public void setNotaParcial2(float f) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.notaParcial2 = f; // Almacenar el valor
     }
 }
+
