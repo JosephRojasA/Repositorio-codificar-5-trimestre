@@ -11,7 +11,7 @@ package clases;
 public class Estudiante {
     private String nombre;
     private float notaParcial1, notaParcial2, notaFinal;
-
+    
     public Estudiante(String nombre) {
         this.nombre = nombre;
     }
@@ -21,6 +21,41 @@ public class Estudiante {
         this.notaParcial1 = np1;
         this.notaParcial2 = np2;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public float getNotaParcial1() {
+        return notaParcial1;
+    }
+
+    public float getNotaParcial2() {
+        return notaParcial2;
+    }
+
+    public float obtenerNotaFinal() {
+        return notaFinal;
+    }
     
+    public void calcularNotaFinal() {
+        notaFinal = (notaParcial1 + notaParcial2 )/2;
+    }
     
+    public String obtenerMensaje(){
+        if (notaFinal > 3){
+            return "el estudiante: " +nombre+ " Aprobo";
+        } else {
+            return "el estudiante: " +nombre+ " Reprobo";
+            
+        }
+    }
+
+    public void setNotaParcial1(float f) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setNotaParcial2(float f) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
