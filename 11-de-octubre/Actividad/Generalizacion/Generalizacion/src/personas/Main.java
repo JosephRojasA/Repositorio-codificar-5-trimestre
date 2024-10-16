@@ -1,8 +1,9 @@
+
 package personas;  // El paquete actual del archivo Main.java
 
-import default_package.Estudiante;
-import default_package.Profesor;
-import default_package.Persona;
+import clases.Estudiante;
+import clases.Profesor;
+import clases.Persona;
 public class Main {
     public static void main(String[] args) {
         Persona p = new Persona();

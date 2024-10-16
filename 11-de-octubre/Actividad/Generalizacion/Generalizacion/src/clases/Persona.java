@@ -1,3 +1,4 @@
+package clases;
 public class Persona {
     private String nombre; // propiedad
     private int edad; // propiedad
@@ -15,6 +16,7 @@ public class Persona {
     public String getNombre () { // asesor a nombre 
         return nombre;
     }
-    public void setNombre (String val) { // mutador de nombre this.nombre val;
+    public void setNombre (String val) { // mutador de nombre 
+        this.nombre = val;
     }
 }
