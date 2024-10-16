@@ -9,10 +9,10 @@ public class Comprobante {
 
     public Comprobante() {}
 
-    public Comprobante(char t, int n, Fecha f) {
-        setTipo(t);
-        setNumero(n);
-        setFecha(f);
+    public Comprobante(char tipo, int numero, Fecha f) {
+        setTipo(tipo);
+        setNumero(numero);
+        setFecha(fecha);
     }
 
     public Fecha getFecha() {

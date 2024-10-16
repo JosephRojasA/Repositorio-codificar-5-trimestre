@@ -4,7 +4,9 @@ public class Cliente {
     private int codigo;
     private String razonSocial;
 
-    public Cliente(){
+    public Cliente(int codigo, String razonSocial){
+        setCodigo(codigo);
+        
 
     }
     public void setCodigo(int codigo){

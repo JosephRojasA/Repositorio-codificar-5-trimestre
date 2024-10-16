@@ -5,6 +5,12 @@ public class Producto {
     private int codigo;
     private String descripcion;
     private float precio;
+    public prodcuto (int codigo, String descripcion, float precio) {
+        setCodigo(codigo);
+        setDescripcion(descripcion);
+        setPrecio(precio);
+
+    }
 
     public void setCodigo (int codigo){
         this.codigo = codigo;
