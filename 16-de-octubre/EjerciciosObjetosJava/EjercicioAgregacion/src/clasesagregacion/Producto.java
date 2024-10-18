@@ -1,41 +1,39 @@
 package clasesagregacion;
 
 public class Producto {
-
     private int codigo;
     private String descripcion;
     private float precio;
-    public prodcuto (int codigo, String descripcion, float precio) {
-        setCodigo(codigo);
-        setDescripcion(descripcion);
-        setPrecio(precio);
 
+    public Producto() {}
+
+    public Producto(int c, String d, float p) {
+        setCodigo(c);
+        setDescripcion(d);
+        setPrecio(p);
     }
 
-    public void setCodigo (int codigo){
-        this.codigo = codigo;
-
-    }
-
-    public int getCodigo(){
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setDescripcion (String descripcion){
-        this.descripcion = descripcion;
-
+    public void setCodigo(int val) {
+        this.codigo = val;
     }
 
-    public String getDescipcion(){
+    public String getDescripcion() {
         return descripcion;
     }
 
-    public void setPrecio (float precio){
-        this.precio = precio;
-
+    public void setDescripcion(String val) {
+        this.descripcion = val;
     }
 
-    public float getPrecion(){
+    public float getPrecio() {
         return precio;
+    }
+
+    public void setPrecio(float val) {
+        this.precio = val;
     }
 }
