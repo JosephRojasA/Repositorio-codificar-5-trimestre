@@ -6,7 +6,6 @@ public class Condicional1_2 {
         System.out.println("cuando escriba 100 se sale");
       
         
-    //    for(int i = 1; i < num; i++){
     
     int N = 0;
             while (N <= 100) {
