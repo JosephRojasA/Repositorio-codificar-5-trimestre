@@ -1,0 +1,75 @@
+body {
+    background-color:  #dfdfdf;
+    }
+
+
+    #contenedor {
+        font-size:1em;
+        background-color: #ffffff;
+        border:#d3d3d3 1px solid;
+        text-align: justify;
+        margin: 10px auto;
+        width : 900px ;
+        height: 590px;
+    }
+
+    #encabezado {
+        width: 900px;
+        height: 150px;
+        background : url('../imagenes/banner1.jpg') no-repeat ;
+        border: #d3d3d3 1px solid ;
+       }
+
+       #encabezado h1 {
+        text-align: center ;
+        margin-top: 50px; } 
+
+        #contenido {
+            border: #d3d3d3 1px solid ;
+            margin: 20px 20px 20px 160px;
+            padding: 10px 15px 32px 21px;
+           }
+
+           #contenido h2 {
+            color : #0075ff;
+            border-bottom: #CFBFB5 1px solid;
+           }
+           #menu {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 10px;
+            float: left;
+            margin-right: 5px;
+            width: 100px;
+            background-color: #D4FFFF ;
+            padding: 10px 10px 10px 20px ;
+            border: lightgreen solid 4px;
+            }   
+
+            div#contenido {
+                border: #d3d3d3 1px solid ;
+            
+                padding: 10px 15px;
+               }
+
+               #menu li {
+                border: #d3d3d3 3px solid;
+                background-color: #d3e4f7;
+                margin-bottom: 5px;
+                font-size: 0.9em;
+                text-align: center;
+                line-height: 30px;
+               }
+               #menu a {
+                display: block;
+                text-decoration: none;
+                color : #000000;
+               }
+
+               #menu li:hover {
+                background-color: #7092be;
+               }
+
+               #menu li:activa,#menu li:hover {
+                background-color: #7092be;
+               }
